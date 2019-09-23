@@ -2,7 +2,7 @@
 
 .TodoInsert {
   display: flex;
-  background: $oc-gray-8;
+  background: $oc-gray-7;
   input {
     background: none;
     outline: none;
@@ -20,7 +20,7 @@
     background: none;
     outline: none;
     border: none;
-    background: $oc-gray-5;
+    background: $oc-gray-6;
     color: $oc-gray-0;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -30,7 +30,7 @@
     cursor: pointer;
     transition: 0.1s background ease-in;
     &:hover {
-      background: $oc-gray-3;
+      background: $oc-gray-5;
     }
 
 

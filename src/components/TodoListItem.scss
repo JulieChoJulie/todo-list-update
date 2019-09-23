@@ -17,11 +17,11 @@
       margin-left: 0.5rem;
       flex: 1;
     }
-    &:checked {
+    &.checked {
       svg {
         color: $oc-pink-6;
       }
-      text {
+      .text {
         color: $oc-gray-5;
         text-decoration: line-through;
       }

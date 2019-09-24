@@ -1,4 +1,12 @@
 @import './utils';
+.TodoListItem-virtualized {
+  & + & {
+    border-top: 1px solid $oc-gray-5;
+  }
+  &:nth-child(even) {
+    background: $oc-gray-1;
+  }
+}
 .TodoListItem {
   padding: 1rem;
   display: flex;
@@ -38,7 +46,7 @@
       color: $oc-red-7;
     }
   }
-  & + & {
-    border-top: 1px solid $oc-gray-5;
-  }
+  //& + & {
+  //  border-top: 1px solid $oc-gray-5;
+  //}
 }

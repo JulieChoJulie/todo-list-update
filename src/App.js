@@ -22,11 +22,16 @@ const App = () => {
         nextId.current += 1;
     }, [todos]);
 
+    const onRemove = useCallback(id => {
+        const editedTodos = todos.filter(todo => todo.id !== id);
+        setTodos(editedTodos);
+    }, [todos])
+
     return (
         <div>
           <TodoTemplate>
               <TodoInsert onInsert={onInsert}/>
-              <TodoList todos={todos}/>
+              <TodoList todos={todos} onRemove={onRemove}/>
           </TodoTemplate>
 
         </div>

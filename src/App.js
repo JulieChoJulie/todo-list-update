@@ -3,6 +3,9 @@ import TodoTemplate from './components/TodoTemplate';
 import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
 
+/*
+//To optimize the rendering performance,
+
 function createBulkTodos() {
     const array = [];
     for (let i = 1; i <= 2500; i++) {
@@ -14,14 +17,15 @@ function createBulkTodos() {
     }
     return array;
 }
+*/
 
 const App = () => {
-    // const [todos, setTodos] = useState([
-    //     {id: 1, text: 'do chem hw', checked: true},
-    //     {id: 2, text: 'trim nails', checked: false},
-    //     {id: 3, text: 'prep tmrw lunch', checked: false},
-    // ]);
-    const [todos, setTodos] = useState(createBulkTodos);
+    const [todos, setTodos] = useState([
+        {id: 1, text: 'do chem hw', checked: true},
+        {id: 2, text: 'trim nails', checked: false},
+        {id: 3, text: 'prep tmrw lunch', checked: false},
+    ]);
+    // const [todos, setTodos] = useState(createBulkTodos);
 
     const nextId = useRef(4);
 
